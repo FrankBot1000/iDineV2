@@ -48,7 +48,7 @@ struct CheckoutView: View {
                 .pickerStyle(.segmented)
             }
             
-            Section("Total: $100") {
+            Section("Total: \(totalPrice)") {
                 Button("Confirm order") {
                     // place the order
                 }
