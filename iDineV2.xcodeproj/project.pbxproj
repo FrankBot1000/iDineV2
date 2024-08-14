@@ -18,6 +18,7 @@
 		564153772C6C412A002EA409 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564153762C6C412A002EA409 /* ItemRow.swift */; };
 		564153792C6D0115002EA409 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564153782C6D0115002EA409 /* ItemDetail.swift */; };
 		5641537B2C6D2593002EA409 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641537A2C6D2593002EA409 /* OrderView.swift */; };
+		5641537D2C6D28B3002EA409 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641537C2C6D28B3002EA409 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		564153762C6C412A002EA409 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		564153782C6D0115002EA409 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		5641537A2C6D2593002EA409 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		5641537C2C6D28B3002EA409 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				5641536F2C6C357A002EA409 /* menu.json */,
 				564153712C6C357A002EA409 /* Menu.swift */,
 				5641536E2C6C357A002EA409 /* Order.swift */,
+				5641537C2C6D28B3002EA409 /* MainView.swift */,
 				564153642C6C34E3002EA409 /* Assets.xcassets */,
 				564153662C6C34E3002EA409 /* Preview Content */,
 			);
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				564153792C6D0115002EA409 /* ItemDetail.swift in Sources */,
+				5641537D2C6D28B3002EA409 /* MainView.swift in Sources */,
 				5641537B2C6D2593002EA409 /* OrderView.swift in Sources */,
 				564153722C6C357A002EA409 /* Order.swift in Sources */,
 				564153632C6C34E2002EA409 /* ContentView.swift in Sources */,
