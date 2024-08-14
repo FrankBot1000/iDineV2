@@ -20,9 +20,9 @@ struct ItemRow: View {
 }
 
 
-/// The older way, as compared to using '#Preview'.
-struct ItemRow_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemRow(item: MenuItem.example)
-    }
-}
+///// The older way, as compared to using '#Preview'.
+//struct ItemRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ItemRow(item: MenuItem.example)
+//    }
+//}
