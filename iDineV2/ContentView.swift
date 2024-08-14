@@ -21,9 +21,7 @@ struct ContentView: View {
                     ForEach(menu) { section in
                         Section(section.name) {
                             ForEach(section.items) { item in
-                                NavigationLink {
-                                    ItemDetail(item: item)
-                                } label: {
+                                NavigationLink(value: item) {
                                     ItemRow(item: item)
                                 }
                                 
