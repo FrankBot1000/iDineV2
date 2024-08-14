@@ -15,6 +15,7 @@ struct ItemDetail: View {
             Image(item.mainImage)
             Text(item.description)
                 .padding()
+            Spacer()
         }
         .navigationTitle(item.name)
     }
