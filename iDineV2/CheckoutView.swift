@@ -13,7 +13,8 @@ struct CheckoutView: View {
     @State private var addLoyaltyDetails    = false
     @State private var loyaltyNumber        = ""
     
-    let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
+    let paymentTypes    = ["Cash", "Credit Card", "iDine Points"]
+    let tipAmounts      = [10, 15, 20, 25, 0]
     
     var body: some View {
         Form {
