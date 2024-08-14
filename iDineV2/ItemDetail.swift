@@ -12,7 +12,10 @@ struct ItemDetail: View {
     
     var body: some View {
         VStack {
-            Image(item.mainImage)
+            ZStack {
+                Image(item.mainImage)
+                Text("Photo: \(item.photoCredit)")
+            }
             Text(item.description)
                 .padding()
             Spacer()
