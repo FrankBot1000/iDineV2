@@ -19,6 +19,7 @@ struct ItemDetail: View {
                     .background(.black)
                     .font(.caption)
                     .foregroundStyle(.background, .white)   //...replaces .foregroundColor(...), which is deprecated.
+                    .offset(x: -5, y: -5)
             }
             Text(item.description)
                 .padding()
