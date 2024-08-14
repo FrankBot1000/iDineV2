@@ -39,6 +39,11 @@ struct ItemDetail: View {
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar(content: {
+            Button("Heart", systemImage: "heart") {
+                print("pressed me")
+            }
+        })
     }
 }
 
