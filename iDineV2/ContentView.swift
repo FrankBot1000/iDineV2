@@ -13,11 +13,14 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            List {
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
+            NavigationStack {
+                List {
+                    Text("Hello World")
+                    Text("Hello World")
+                    Text("Hello World")
+                }
             }
+            
         }
         .padding()
     }
