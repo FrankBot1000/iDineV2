@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CheckoutView: View {
     @EnvironmentObject var order: Order
+    @State private var paymentType = "Cash"
     
     let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
     
