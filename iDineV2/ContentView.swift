@@ -24,11 +24,13 @@ struct ContentView: View {
                                 NavigationLink(value: item) {
                                     ItemRow(item: item)
                                 }
-                                
                             }
                         }
                     }
                 }
+                .navigationDestination(for: MenuItem.self, destination: { item in
+                    ItemDetail(item: item)
+                })
                 .navigationTitle("Menu")
                 .listStyle(.grouped)
             }
