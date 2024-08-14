@@ -14,9 +14,25 @@ struct CheckoutView: View {
     @State private var loyaltyNumber        = ""
     @State private var tipAmount            = 15
     @State private var showingPaymentAlert  = false
+    @State private var myPickUpTime: PickUpTime = .now
     
     let paymentTypes    = ["Cash", "Credit Card", "iDine Points"]
     let tipAmounts      = [10, 15, 20, 25, 0]
+    
+    enum PickUpTime: Int, CaseIterable {
+        case now, tonight, tomorrowMorning
+        
+        var name: String {
+            switch self {
+            case .now:
+                return "Now"
+            case .tonight:
+                return "Tonight"
+            case .tomorrowMorning:
+                return "Tomorrow Morning"
+            }
+        }
+    }
     
     var totalPrice: String {
         let total       = Double(order.total)
