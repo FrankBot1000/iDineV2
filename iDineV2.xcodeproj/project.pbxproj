@@ -20,6 +20,7 @@
 		5641537B2C6D2593002EA409 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641537A2C6D2593002EA409 /* OrderView.swift */; };
 		5641537D2C6D28B3002EA409 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641537C2C6D28B3002EA409 /* MainView.swift */; };
 		5641537F2C6D330C002EA409 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641537E2C6D330C002EA409 /* CheckoutView.swift */; };
+		56C8328F2C6D5BA60099CEBD /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8328E2C6D5BA60099CEBD /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		5641537A2C6D2593002EA409 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		5641537C2C6D28B3002EA409 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5641537E2C6D330C002EA409 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		56C8328E2C6D5BA60099CEBD /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				5641536F2C6C357A002EA409 /* menu.json */,
 				564153712C6C357A002EA409 /* Menu.swift */,
 				5641536E2C6C357A002EA409 /* Order.swift */,
+				56C8328E2C6D5BA60099CEBD /* Favorites.swift */,
 				5641537C2C6D28B3002EA409 /* MainView.swift */,
 				564153642C6C34E3002EA409 /* Assets.xcassets */,
 				564153662C6C34E3002EA409 /* Preview Content */,
@@ -170,6 +173,7 @@
 				5641537F2C6D330C002EA409 /* CheckoutView.swift in Sources */,
 				5641537B2C6D2593002EA409 /* OrderView.swift in Sources */,
 				564153722C6C357A002EA409 /* Order.swift in Sources */,
+				56C8328F2C6D5BA60099CEBD /* Favorites.swift in Sources */,
 				564153632C6C34E2002EA409 /* ContentView.swift in Sources */,
 				564153612C6C34E2002EA409 /* iDineV2App.swift in Sources */,
 				564153772C6C412A002EA409 /* ItemRow.swift in Sources */,
