@@ -32,6 +32,7 @@ struct ContentView: View {
                     ItemDetail(item: item)
                 })
                 .navigationTitle("Menu")
+                .navigationBarTitleDisplayMode(.inline)
                 .listStyle(.grouped)
             }
             
