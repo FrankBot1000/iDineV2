@@ -32,6 +32,8 @@ struct ItemDetail: View {
                 order.add(item: item)
             }
             .buttonStyle(.borderedProminent)
+            .font(.custom("Times New Roman", size: 20.0))
+            .tint(.green)   // background color of Button
             
             Spacer()
         }
