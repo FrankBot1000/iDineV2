@@ -13,9 +13,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
             NavigationStack {
                 List {
                     ForEach(menu) { section in
