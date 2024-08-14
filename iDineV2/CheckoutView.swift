@@ -17,6 +17,12 @@ struct CheckoutView: View {
     let paymentTypes    = ["Cash", "Credit Card", "iDine Points"]
     let tipAmounts      = [10, 15, 20, 25, 0]
     
+    var totalPrice: String {
+        let total       = Double(order.total)
+        let tipValue    = total / 100 * Double(tipAmount)
+        return (total + tipValue).formatted(.currency(code: "USD"))
+    }
+    
     var body: some View {
         Form {
             Section {
