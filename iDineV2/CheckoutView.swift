@@ -19,17 +19,16 @@ struct CheckoutView: View {
     let paymentTypes    = ["Cash", "Credit Card", "iDine Points"]
     let tipAmounts      = [10, 15, 20, 25, 0]
     
+    /// Using an enum to enumerate over the pick up times, instead of an array, as was used for 'paymentTypes'.
+    ///
+    /// A second way of enumerating over options.
     enum PickUpTime: Int, CaseIterable {
         case now, tonight, tomorrowMorning
-        
         var name: String {
             switch self {
-            case .now:
-                return "Now"
-            case .tonight:
-                return "Tonight"
-            case .tomorrowMorning:
-                return "Tomorrow Morning"
+                case .now:              return "Now"
+                case .tonight:          return "Tonight"
+                case .tomorrowMorning:  return "Tomorrow Morning"
             }
         }
     }
