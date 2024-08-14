@@ -65,8 +65,8 @@
 			children = (
 				564153602C6C34E2002EA409 /* iDineV2App.swift */,
 				564153622C6C34E2002EA409 /* ContentView.swift */,
-				564153782C6D0115002EA409 /* ItemDetail.swift */,
 				564153762C6C412A002EA409 /* ItemRow.swift */,
+				564153782C6D0115002EA409 /* ItemDetail.swift */,
 				564153702C6C357A002EA409 /* Helper.swift */,
 				5641536F2C6C357A002EA409 /* menu.json */,
 				564153712C6C357A002EA409 /* Menu.swift */,

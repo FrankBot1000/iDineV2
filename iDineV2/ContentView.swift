@@ -22,7 +22,7 @@ struct ContentView: View {
                         Section(section.name) {
                             ForEach(section.items) { item in
                                 NavigationLink {
-                                    Text(item.name)
+                                    ItemDetail(item: item)
                                 } label: {
                                     ItemRow(item: item)
                                 }
