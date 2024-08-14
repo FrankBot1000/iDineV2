@@ -17,4 +17,5 @@ struct CheckoutView: View {
 
 #Preview {
     CheckoutView()
+        .environmentObject(Order())
 }
