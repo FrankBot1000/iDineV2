@@ -14,7 +14,17 @@ struct CheckoutView: View {
     let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Section {
+                Picker("How do you want to pay?", selection: $paymentType) {
+                    ForEach(paymentTypes, id:  \.self) {
+                        Text($0)
+                    }
+                }
+            }
+        }
+        .navigationTitle("Payment")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
