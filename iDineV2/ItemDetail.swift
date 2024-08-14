@@ -15,6 +15,10 @@ struct ItemDetail: View {
             ZStack {
                 Image(item.mainImage)
                 Text("Photo: \(item.photoCredit)")
+                    .padding(4)
+                    .background(.black)
+                    .font(.caption)
+                    .foregroundStyle(.background, .white)
             }
             Text(item.description)
                 .padding()
