@@ -31,6 +31,9 @@ struct OrderView: View {
                 }
             }
             .navigationTitle("Order")
+            .toolbar {
+                EditButton()
+            }
         }
     }
     
