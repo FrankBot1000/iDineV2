@@ -38,7 +38,6 @@ struct ItemRow: View {
                     .foregroundStyle(.background, .white)   // ...use instead of deprecated .foregroundColor(.white).
             }
         }
-        
     }
 }
 
