@@ -18,9 +18,11 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             NavigationStack {
                 List {
-                    Text("Hello World")
-                    Text("Hello World")
-                    Text("Hello World")
+                    ForEach(menu) { section in
+                        Text("Hello World")
+                        Text("Hello World")
+                        Text("Hello World")
+                    }
                 }
                 .navigationTitle("Menu")
             }
