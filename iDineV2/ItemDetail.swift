@@ -16,5 +16,5 @@ struct ItemDetail: View {
 }
 
 #Preview {
-    ItemDetail()
+    ItemDetail(item: MenuItem.example)
 }
