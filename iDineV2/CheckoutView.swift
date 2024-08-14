@@ -33,7 +33,7 @@ struct CheckoutView: View {
                 }
             }
             
-            Section {
+            Section("Add a tip?") {
                 Picker("Percentage:", selection: $tipAmount) {
                     ForEach(tipAmounts, id: \.self) {
                         Text("\($0)%")
