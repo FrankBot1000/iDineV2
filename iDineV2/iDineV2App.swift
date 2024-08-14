@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct iDineV2App: App {
-    @StateObject var order = Order()
+    @StateObject var order      = Order()
+    @StateObject var favorites  = Favorites()
     
     var body: some Scene {
         WindowGroup {
             MainView()
                 .environmentObject(order)
+                .environmentObject(favorites)
         }
     }
 }
