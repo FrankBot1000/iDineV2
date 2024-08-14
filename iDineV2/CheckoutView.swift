@@ -65,6 +65,14 @@ struct CheckoutView: View {
                 .pickerStyle(.segmented)
             }
             
+            Section("Pick up Time") {
+                Picker("When to Pick Up", selection: $myPickUpTime) {
+                    ForEach(PickUpTime.allCases, id: \.self) {
+                        Text("\($0.name)")
+                    }
+                }
+            }
+            
             Section("Total: \(totalPrice)") {
                 Button("Confirm order") {
                     showingPaymentAlert.toggle()
