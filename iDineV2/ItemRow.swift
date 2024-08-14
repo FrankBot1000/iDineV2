@@ -14,6 +14,7 @@ struct ItemRow: View {
         HStack {
             Image(item.thumbnailImage)
             Text(item.name)
+            Text("$\(item.price)")
         }
         
     }
