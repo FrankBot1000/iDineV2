@@ -84,7 +84,7 @@ struct CheckoutView: View {
         .alert("Order confirmed", isPresented: $showingPaymentAlert) {
             // Add buttons here
         } message: {
-            Text("Your total was \(totalPrice) - thank you!")
+            Text("Your total was \(totalPrice) - thank you!\nPick UP Time: \(myPickUpTime.name)")
         }
     }
 }
