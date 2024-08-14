@@ -14,6 +14,7 @@ struct ItemDetail: View {
         VStack {
             Image(item.mainImage)
             Text(item.description)
+                .padding()
         }
         .navigationTitle(item.name)
     }
