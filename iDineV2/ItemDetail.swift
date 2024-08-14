@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ItemDetail: View {
     @EnvironmentObject var order: Order
+    @EnvironmentObject var favorites: Favorites
+    
     let item: MenuItem
     
     var body: some View {
@@ -41,7 +43,7 @@ struct ItemDetail: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             Button("Heart", systemImage: "heart") {
-                print("pressed me")
+                favorites.add(item: item)
             }
         })
     }
