@@ -10,6 +10,8 @@ import SwiftUI
 struct CheckoutView: View {
     @EnvironmentObject var order: Order
     
+    let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
