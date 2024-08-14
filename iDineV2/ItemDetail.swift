@@ -12,7 +12,7 @@ struct ItemDetail: View {
     
     var body: some View {
         VStack {
-            ZStack {
+            ZStack(alignment: .bottomTrailing) {
                 Image(item.mainImage)
                 Text("Photo: \(item.photoCredit)")
                     .padding(4)
