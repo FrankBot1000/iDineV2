@@ -15,6 +15,11 @@ struct MainView: View {
                     Label("Menu", systemImage: "list.dash")
                 }
             
+            FavoritesView()
+                .tabItem {
+                    Label("Favorites", systemImage: "heart")
+                }
+            
             OrderView()
                 .tabItem {
                     Label("Order", systemImage: "square.and.pencil")
