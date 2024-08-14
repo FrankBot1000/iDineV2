@@ -29,6 +29,12 @@ struct ItemRow: View {
             }
             ForEach(item.restrictions, id: \.self) { restriction in
                 Text(restriction)
+                    .font(.caption)
+                    .fontWeight(.black)
+                    .padding(5)
+                    .background(colors[restriction, default: .black])
+                    .clipShape(Circle())
+                    .foregroundStyle(.background, .white)   // ...use instead of deprecated .foregroundColor(.white).
             }
         }
         
