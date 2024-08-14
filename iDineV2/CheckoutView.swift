@@ -51,7 +51,7 @@ struct CheckoutView: View {
             
             Section("Total: \(totalPrice)") {
                 Button("Confirm order") {
-                    // place the order
+                    showingPaymentAlert.toggle()
                 }
             }
         }
