@@ -11,8 +11,11 @@ struct ItemRow: View {
     let item: MenuItem
     
     var body: some View {
-        Image(item.thumbnailImage)
-        Text(item.name)
+        HStack {
+            Image(item.thumbnailImage)
+            Text(item.name)
+        }
+        
     }
 }
 
