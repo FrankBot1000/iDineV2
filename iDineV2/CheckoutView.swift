@@ -14,7 +14,7 @@ struct CheckoutView: View {
     let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
     
     var body: some View {
-        VStack {
+        Form {
             Section {
                 Picker("How do you want to pay?", selection: $paymentType) {
                     ForEach(paymentTypes, id:  \.self) {
