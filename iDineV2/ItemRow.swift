@@ -14,6 +14,7 @@ struct ItemRow: View {
         HStack {
             Image(item.thumbnailImage)
                 .clipShape(Circle())
+                .overlay(Circle().stroke(.gray, lineWidth: 2))
             VStack(alignment: .leading) {
                 Text(item.name)
                     .font(.headline)
