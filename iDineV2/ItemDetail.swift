@@ -20,5 +20,8 @@ struct ItemDetail: View {
 }
 
 #Preview {
-    ItemDetail(item: MenuItem.example)
+    NavigationStack {
+        ItemDetail(item: MenuItem.example)
+    }
+    
 }
