@@ -57,6 +57,11 @@ struct CheckoutView: View {
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
+        .alert("Order confirmed", isPresented: $showingPaymentAlert) {
+            // Add buttons here
+        } message: {
+            Text("Your total was \(totalPrice) - thank you!")
+        }
     }
 }
 
