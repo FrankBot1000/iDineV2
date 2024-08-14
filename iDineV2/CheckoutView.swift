@@ -32,6 +32,15 @@ struct CheckoutView: View {
                     TextField("Enter your iDine ID", text: $loyaltyNumber)
                 }
             }
+            
+            Section {
+                Picker("Percentage:", selection: $tipAmount) {
+                    ForEach(tipAmounts, id: \.self) {
+                        Text("\($0)%")
+                    }
+                }
+                .pickerStyle(.segmented)
+            }
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
