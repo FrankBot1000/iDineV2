@@ -1,3 +1,4 @@
+
 Code challenges added to the "iDine App" by Paul Hudson, from the "Building a complete project" chapter in his "SwiftUI by Example" book. 
 
 Added the following code for the three challenges at the end of the chapter:
