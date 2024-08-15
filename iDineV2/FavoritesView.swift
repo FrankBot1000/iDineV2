@@ -33,5 +33,5 @@ struct FavoritesView: View {
 
 #Preview {
     FavoritesView()
-        .environmentObject(Favorites(items: [MenuItem.example]))
+        .environmentObject(Favorites(items: MenuItem.examples))
 }
