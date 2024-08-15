@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct FavoritesView: View {
-    @EnvironmentObject var items: Favorites
+    @EnvironmentObject var favorites: Favorites
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(items.favorites) { favorite in
+                ForEach(favorites.items) { favorite in
                     HStack {
                         Text(favorite.name)
                     }
@@ -25,7 +25,7 @@ struct FavoritesView: View {
     
     
     func deleteItems(at offsets: IndexSet) {
-        items.favorites.remove(atOffsets: offsets)
+        favorites.items.remove(atOffsets: offsets)
     }
 }
 
