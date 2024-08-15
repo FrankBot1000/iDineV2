@@ -1,0 +1,18 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Code challenges added to the "iDine App" by Paul Hudson, from the "Building a complete project" chapter in his "SwiftUI by Example" book. \
+Added the following code for the three challenges at the end of the chapter:\
+(1) Customized the "Order This" button with a custom font and background.\
+(2)  Added "Pickup time" Picker to the CheckoutView, with "Now", "Tonight" and "Tomorrow Morning" options.\
+	Also, added a message for the "Pickup time" within the Alert, after the "Complete Order" button is pressed.\
+(3) Added a Favorite navigation bar item to the ItemDetail and a Favorites tab for showing the favorites.\
+	The favorites are grouped into item types, in Sections.\
+	Some refactoring:\
+		Using an enum instead of an array for reading favorite items.\
+		The favorites Section code is abstracted out into a separate FavoritesSection View.\
+		Using a closure instead of calling deleteItems, for the .onDelete modifier.}

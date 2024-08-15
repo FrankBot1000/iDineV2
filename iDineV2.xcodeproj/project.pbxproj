@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		56339EA02C6DB8DB00002083 /* FavoritesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56339E9F2C6DB8DB00002083 /* FavoritesSection.swift */; };
+		56339EA22C6E533300002083 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 56339EA12C6E533300002083 /* README.rtf */; };
 		564153612C6C34E2002EA409 /* iDineV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564153602C6C34E2002EA409 /* iDineV2App.swift */; };
 		564153632C6C34E2002EA409 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564153622C6C34E2002EA409 /* ContentView.swift */; };
 		564153652C6C34E3002EA409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564153642C6C34E3002EA409 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		56339E9F2C6DB8DB00002083 /* FavoritesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesSection.swift; sourceTree = "<group>"; };
+		56339EA12C6E533300002083 /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 		5641535D2C6C34E2002EA409 /* iDineV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDineV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		564153602C6C34E2002EA409 /* iDineV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineV2App.swift; sourceTree = "<group>"; };
 		564153622C6C34E2002EA409 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				56C8328E2C6D5BA60099CEBD /* Favorites.swift */,
 				56C832902C6D5E020099CEBD /* FavoritesView.swift */,
 				56339E9F2C6DB8DB00002083 /* FavoritesSection.swift */,
+				56339EA12C6E533300002083 /* README.rtf */,
 				5641537C2C6D28B3002EA409 /* MainView.swift */,
 				564153642C6C34E3002EA409 /* Assets.xcassets */,
 				564153662C6C34E3002EA409 /* Preview Content */,
@@ -163,6 +166,7 @@
 			files = (
 				564153732C6C357A002EA409 /* menu.json in Resources */,
 				564153682C6C34E3002EA409 /* Preview Assets.xcassets in Resources */,
+				56339EA22C6E533300002083 /* README.rtf in Resources */,
 				564153652C6C34E3002EA409 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
