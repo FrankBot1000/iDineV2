@@ -15,7 +15,7 @@ struct FavoritesView: View {
             List {
                 ForEach(favorites.items) { favorite in
                     HStack {
-                        Text(favorite.name)
+                        ItemRow(item: favorite)
                     }
                     
                 }
