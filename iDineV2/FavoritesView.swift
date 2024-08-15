@@ -31,4 +31,5 @@ struct FavoritesView: View {
 
 #Preview {
     FavoritesView()
+        .environmentObject(Favorites())
 }
