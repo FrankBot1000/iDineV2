@@ -22,6 +22,11 @@ struct FavoritesView: View {
             }
         }
     }
+    
+    
+    func deleteItems(at offsets: IndexSet) {
+        favorites.favorites.remove(atOffsets: offsets)
+    }
 }
 
 #Preview {
