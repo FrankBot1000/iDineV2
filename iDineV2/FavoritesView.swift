@@ -13,14 +13,27 @@ struct FavoritesView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(favorites.items) { favorite in
-                    HStack {
-                        NavigationLink(value: favorite) {
-                            ItemRow(item: favorite)
+                Section("Breakfast") {
+                    ForEach(favorites.items.filter{$0.itemType == .breakfast}) { favorite in
+                        HStack {
+                            NavigationLink(value: favorite) {
+                                ItemRow(item: favorite)
+                            }
                         }
+                        
                     }
-                    
                 }
+                Section("Mains") {
+                    ForEach(favorites.items.filter{$0.itemType == .mains}) { favorite in
+                        HStack {
+                            NavigationLink(value: favorite) {
+                                ItemRow(item: favorite)
+                            }
+                        }
+                        
+                    }
+                }
+                
             }
             .navigationDestination(for: MenuItem.self, destination: { menuItem in
                 ItemDetail(item: menuItem, isFavorite: true)
