@@ -8,16 +8,16 @@
 import SwiftUI
 
 class Favorites: ObservableObject {
-    @Published var favorites = [MenuItem]()
+    @Published var items = [MenuItem]()
     
     
     func add(item: MenuItem) {
-        favorites.append(item)
+        items.append(item)
     }
     
     func remove(item: MenuItem) {
-        if let index = favorites.firstIndex(of: item) {
-            favorites.remove(at: index)
+        if let index = items.firstIndex(of: item) {
+            items.remove(at: index)
         }
     }
     
