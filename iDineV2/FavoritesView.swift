@@ -19,6 +19,11 @@ struct FavoritesView: View {
                         FavoritesSection(itemType: itemType, favorites: favorites)
                     }
                 }
+                .onDelete(perform: { indexSet in
+                    favorites.items.remove(atOffsets: indexSet)
+                })
+                // Above is more clear, but could have done:
+//                .onDelete{favorites.items.remove(atOffsets: $0)}
             }
             .navigationDestination(for: MenuItem.self, destination: { menuItem in
                 ItemDetail(item: menuItem, isFavorite: true)
