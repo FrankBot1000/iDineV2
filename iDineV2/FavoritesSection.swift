@@ -21,7 +21,18 @@ struct FavoritesSection: View {
                 }
                 
             }
+            .onDelete(perform: { indexSet in
+                favorites.items.remove(atOffsets: indexSet)
+            })
+            // Above is more clear, but could have done:
+//                .onDelete{favorites.items.remove(atOffsets: $0)}
         }
+    }
+    
+    
+    @available(*, deprecated, message: "For .onDelete modifier, use closure '{indexSet in favorites.items.remove(atOffsets: indexSet)}' instead.")
+    func deleteItems(at offsets: IndexSet) {
+        favorites.items.remove(atOffsets: offsets)
     }
 }
 
