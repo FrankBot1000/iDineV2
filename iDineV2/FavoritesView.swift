@@ -23,7 +23,7 @@ struct FavoritesView: View {
                 }
             }
             .navigationDestination(for: MenuItem.self, destination: { menuItem in
-                ItemDetail(item: menuItem)
+                ItemDetail(item: menuItem, isFavorite: true)
             })
             .navigationTitle("Favorites")
             .navigationBarTitleDisplayMode(.inline)
