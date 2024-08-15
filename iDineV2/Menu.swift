@@ -30,7 +30,7 @@ struct MenuItem: Codable, Hashable, Equatable, Identifiable {
     var restrictions: [String]
     var description: String
     
-    var itemType: ItemType = .breakfast
+    var itemType: ItemType?     // Make an optional; will be nil for decoded menu items in 'menu.json'.
 
     var mainImage: String {
         name.replacingOccurrences(of: " ", with: "-").lowercased()
