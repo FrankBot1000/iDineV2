@@ -20,6 +20,8 @@ struct FavoritesView: View {
                     
                 }
             }
+            .navigationTitle("Favorites")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
     
@@ -31,5 +33,5 @@ struct FavoritesView: View {
 
 #Preview {
     FavoritesView()
-        .environmentObject(Favorites())
+        .environmentObject(Favorites(items: [MenuItem.example]))
 }
