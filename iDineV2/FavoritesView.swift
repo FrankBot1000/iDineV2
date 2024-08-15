@@ -15,11 +15,16 @@ struct FavoritesView: View {
             List {
                 ForEach(favorites.items) { favorite in
                     HStack {
-                        ItemRow(item: favorite)
+                        NavigationLink(value: favorite) {
+                            ItemRow(item: favorite)
+                        }
                     }
                     
                 }
             }
+            .navigationDestination(for: MenuItem.self, destination: { menuItem in
+                ItemDetail(item: menuItem)
+            })
             .navigationTitle("Favorites")
             .navigationBarTitleDisplayMode(.inline)
         }
