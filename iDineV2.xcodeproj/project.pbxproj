@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56339EA02C6DB8DB00002083 /* FavoritesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56339E9F2C6DB8DB00002083 /* FavoritesSection.swift */; };
 		564153612C6C34E2002EA409 /* iDineV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564153602C6C34E2002EA409 /* iDineV2App.swift */; };
 		564153632C6C34E2002EA409 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564153622C6C34E2002EA409 /* ContentView.swift */; };
 		564153652C6C34E3002EA409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564153642C6C34E3002EA409 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56339E9F2C6DB8DB00002083 /* FavoritesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesSection.swift; sourceTree = "<group>"; };
 		5641535D2C6C34E2002EA409 /* iDineV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDineV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		564153602C6C34E2002EA409 /* iDineV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineV2App.swift; sourceTree = "<group>"; };
 		564153622C6C34E2002EA409 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				5641536E2C6C357A002EA409 /* Order.swift */,
 				56C8328E2C6D5BA60099CEBD /* Favorites.swift */,
 				56C832902C6D5E020099CEBD /* FavoritesView.swift */,
+				56339E9F2C6DB8DB00002083 /* FavoritesSection.swift */,
 				5641537C2C6D28B3002EA409 /* MainView.swift */,
 				564153642C6C34E3002EA409 /* Assets.xcassets */,
 				564153662C6C34E3002EA409 /* Preview Content */,
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56339EA02C6DB8DB00002083 /* FavoritesSection.swift in Sources */,
 				564153792C6D0115002EA409 /* ItemDetail.swift in Sources */,
 				5641537D2C6D28B3002EA409 /* MainView.swift in Sources */,
 				5641537F2C6D330C002EA409 /* CheckoutView.swift in Sources */,
