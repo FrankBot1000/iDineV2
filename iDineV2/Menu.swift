@@ -32,5 +32,13 @@ struct MenuItem: Codable, Hashable, Equatable, Identifiable {
 
     #if DEBUG
     static let example = MenuItem(id: UUID(), name: "Maple French Toast", photoCredit: "Joseph Gonzalez", price: 6, restrictions: ["G", "V"], description: "Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…")
+    
+    static let examples = [
+        MenuItem(id: UUID(), name: "Maple French Toast", photoCredit: "Joseph Gonzalez", price: 6, restrictions: ["G", "V"], description: "Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…"),
+        
+        MenuItem(id: UUID(), name: "Stack-o-Pancakes", photoCredit: "Joseph Gonzalez", price: 8, restrictions: ["D", "G", "V"], description: "What do you get? Pancakes! How many do you get? One metric stack! That's equivalent to 1000 millistacks, or a tenth of a kilostack. In short, you get a lot of pancakes."),
+        
+        MenuItem(id: UUID(), name: "Fresh-baked Croissant", photoCredit: "Kavita Joshi Rai", price: 3, restrictions: ["D", "G"], description: "This is just a regular croissant that we buy in bulk from a frozen foods supermarket, but we needed some sort of adjective to justify our price. So, it was either \"fresh-baked\" or \"authentic Parisian\", and our legal team thinks the latter is probably going to land us in hot water."),
+    ]
     #endif
 }
