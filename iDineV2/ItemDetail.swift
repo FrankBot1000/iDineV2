@@ -12,6 +12,7 @@ struct ItemDetail: View {
     @EnvironmentObject var favorites: Favorites
     
     let item: MenuItem
+    var isFavorite = false
     
     var body: some View {
         VStack {
@@ -42,8 +43,10 @@ struct ItemDetail: View {
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
-            Button("Heart", systemImage: "heart") {
-                favorites.add(item: item)
+            if !isFavorite {
+                Button("Heart", systemImage: "heart") {
+                    favorites.add(item: item)
+                }
             }
         })
     }
