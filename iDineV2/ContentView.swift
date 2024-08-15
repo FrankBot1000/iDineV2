@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+    var menu = {
+        var menuSections = Bundle.main.decode([MenuSection].self, from: "menu.json")
+        // Set the itemType of each of the menuItems of each section:
+        for (sectionIndex, section) in menuSections.enumerated() {
+            section.items.enumerated().forEach {(menuItemIndex, _) in
+                menuSections[sectionIndex].items[menuItemIndex].itemType = ItemType(rawValue: section.name) ?? .breakfast
+            }
+        }
+        return menuSections
+    }()
+    
+    
     
     var body: some View {
         VStack {
