@@ -21,5 +21,14 @@ class Favorites: ObservableObject {
         }
     }
     
+}
+
+
+extension Favorites {
+    
+    convenience init(items: [MenuItem]) {
+        self.init()
+        self.items = items
+    }
     
 }
