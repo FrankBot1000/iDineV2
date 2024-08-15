@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavoritesSection: View {
     let itemType: ItemType
-    let favorites: Favorites
+    @ObservedObject var favorites: Favorites
     
     var body: some View {
         Section(itemType.rawValue) {
